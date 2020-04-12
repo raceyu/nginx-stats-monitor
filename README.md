@@ -5,11 +5,11 @@ Collect nginx stats with nginx lua
 ## Installation
 
 1. Install [nginx](http://nginx.org/) lua module [--add-module=/path/addon/lua-nginx-module](https://github.com/openresty/lua-nginx-module) or use [OpenResty](https://openresty.org)
-2. Clone [nginx-stat-monitor](https://github.com/raceyu/nginx-stat-monitor) in lua package path, specified by ```lua_package_path``` policy
+2. Clone [nginx-stats-monitor](https://github.com/raceyu/nginx-stats-monitor) in lua package path, specified by ```lua_package_path``` policy
 
 ```sh
 cd /usr/local/nginx/lua/
-git clone https://github.com/raceyu/nginx-stat-monitor.git reqstatus
+git clone https://github.com/raceyu/nginx-stats-monitor.git reqstatus
 ```
 
 ## Overview
@@ -145,4 +145,4 @@ http {
       }
    }
 }
-
+```
