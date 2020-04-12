@@ -25,12 +25,16 @@ git clone https://github.com/raceyu/nginx-stat-monitor.git reqstatus
 ```
 location /req-status {
     content_by_lua_file reqstatus/output.lua;
-}```
+}
+```
+```
+Output: http://127.0.0.1/req-status
+```
+```
+Clear: http://127.0.0.1/req-status?action=clear
+```
 
-```Api: http://127.0.0.1/req-status```
-```Clear: http://127.0.0.1/req-status?action=clear```
-
-4) Example
+## Example
 ```nginx
 user www-data;
 worker_processes  auto;
@@ -141,4 +145,4 @@ http {
       }
    }
 }
-```
+
